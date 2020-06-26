@@ -41,7 +41,47 @@ function add(){
 }
 
 ///////
+JSON > Key:Value
+JavaScript Object Notation
+[
+    {
+        name:"John",
+        class:'Node'
+    },
+    {
+        name:"Alvin",
+        class:'React'
+    }
+]
 
 
+//////////////////////////
+Create Package.json
+//////////////////////////
+> name
+> metadata
+> Description
+> Script (Start,build,dev,prod)
+> package name and version
+
+**NodeJs Must be installed in our system
+> navigate to the folder where you want file using cmd/terminal
+> npm init
+> answer all questions
+> type "yes"
 
 
+//////////////////////////
+Step to install packages
+//////////////////////////
+> navigate to the folder where you want file using cmd/terminal
+> npm install zone.js / npm i zone.js 
+
+localpackage > local to the folder
+global package
+Dev depedency
+
+//////////////////////////
+Step to Dev packages
+//////////////////////////
+npm i mocha  --save-dev
