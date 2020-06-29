@@ -85,3 +85,32 @@ Dev depedency
 Step to Dev packages
 //////////////////////////
 npm i mocha  --save-dev
+
+
+/////////////////////
+Math.random()
+0.5563045285306278
+Math.random()
+0.5386901359941891
+Math.random()*100
+7.972128709845316
+Math.random()*100
+1.8652873588165253
+Math.random()*100
+84.23813743154314
+Math.random()*100
+48.55152313836106
+Math.floor(Math.random()*100)
+72
+Math.floor(Math.random()*100)
+82
+Math.floor(Math.random()*100)
+42
+Math.floor(Math.random()*100)
+89
+Math.floor(Math.random()*100)
+79
+
+Math.floor(Math.random()*(max-min))+min
+
+Math.floor(Math.random()*(20-1))+1
