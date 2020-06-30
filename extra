@@ -114,3 +114,15 @@ Math.floor(Math.random()*100)
 Math.floor(Math.random()*(max-min))+min
 
 Math.floor(Math.random()*(20-1))+1
+
+
+///////////
+nodemon
+//////////
+#window
+> run cmd as admin
+> npm i -g nodemon
+
+#mac/linuc
+> open terminal
+> sudo npm i -g nodemon

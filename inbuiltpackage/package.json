@@ -1,0 +1,15 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "this is about learning",
+  "main": "api.js",
+  "scripts": {
+    "start":"node api.js",
+    "dev":"nodemon http.js"
+  },
+  "keywords": [
+    "nodee"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC"
+}

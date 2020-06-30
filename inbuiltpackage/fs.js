@@ -10,11 +10,6 @@ fs.appendFile('mytest.txt',Math.floor(Math.random()*(20-1))+1+' This is from nod
     console.log('File Crreated')
 })
 
-fs.readFile('db.json','utf-8',function(err,data){
-    if(err) throw err;
-    console.log(data)
-})
-
 
 fs.rename('mytest.txt','myText.txt',function(err){
     if(err) throw err;
@@ -26,3 +21,8 @@ fs.unlink('myText.txt',function(err){
     if(err) throw err;
     console.log("File deleted")
 })*/
+
+fs.readFile('db.json','utf-8',function(err,data){
+    if(err) throw err;
+    console.log(data)
+})
