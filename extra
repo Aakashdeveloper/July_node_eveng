@@ -126,3 +126,15 @@ nodemon
 #mac/linuc
 > open terminal
 > sudo npm i -g nodemon
+
+//////
+Template Engine
+> EJS
+> Vash
+> Swig
+> Handlebar
+
+
+Enviornment variable
+echo 'export PORT='9000''>dev.env
+source ./dev.env
