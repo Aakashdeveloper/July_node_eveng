@@ -138,3 +138,11 @@ Template Engine
 Enviornment variable
 echo 'export PORT='9000''>dev.env
 source ./dev.env
+
+
+function add(a,b){
+    return a+b
+}
+
+
+add(1,2)
