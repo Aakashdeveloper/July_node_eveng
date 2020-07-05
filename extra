@@ -146,3 +146,95 @@ function add(a,b){
 
 
 add(1,2)
+
+
+////////
+MongoDB       VS     SQL
+
+Not A Sql             SQL
+Database              Database
+Collection            Table
+Document              Row
+JSON                  Tabluar
+
+Sno| Hindi | English
+1  |   80  |
+2  |       | 80
+
+SQL > OLTP data with proper/Same structure
+
+[
+    {
+        sno:1,
+        hindi:80
+    },
+    {
+        sno:2,
+        english:80
+    }
+]
+
+https://www.mongodb.com/try/download/community?tck=docs_server
+
+>in C drive make folder by name of data/db
+> open cmd
+   > Navigate to C:\Program File\MongoDB\Server\4.2\bin
+   > Type mongod
+
+>Open 2nd Cmd
+> Navigate to C:\Program File\MongoDB\Server\4.2\bin
+> mongo
+
+
+>>>>>>
+To see all Database > show dbs 
+
+//Create Database > use restaurants
+
+//Insert record
+db.first.insert({sno:1,name:'John'})
+db.first.insert({sno:2,name:'Ankit'})
+
+
+//Go Inside any database > use restaurants
+//To check collections> show collections
+//To see all data > 
+db.first.find({})
+
+//Insert Multiple record
+db.second.insertMany(
+    [
+        {
+            _id:1,
+            name:'John',
+            city:'Delhi'
+        },
+        {
+            _id:2,
+            name:'Alvin',
+            city:'Delhi'
+        },
+        {
+            _id:3,
+            name:'Neha',
+            city:'Newyork'
+        },
+        {
+            _id:4,
+            name:'Keiv',
+            city:'Pune'
+        },
+        {
+            _id:5,
+            name:'Zoe',
+            city:'Newyork'
+        }
+    ]
+)
+
+////Find with condition////
+
+db.second.find({city:'Delhi'})
+db.second.find({name:'Zoe'})
+db.restaurant.find().pretty()
+

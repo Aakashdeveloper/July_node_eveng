@@ -52,7 +52,7 @@ var city = [
 function Router(menu){
     cityRouter.route('/')
     .get(function(req,res){
-      res.render('city',{title:'City Page',menu:menu})
+      res.render('city',{title:'City Page',menu,city:city})
   })
   
   cityRouter.route('/details')

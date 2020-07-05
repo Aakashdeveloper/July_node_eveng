@@ -1,7 +1,5 @@
-var express = require('express');
-var restaurantsRouter = express.Router();
-
-var restaurants = [
+db.restaurant.insertMany(
+[
     {
         "_id": 6360,
         "name": "Gulab",
@@ -153,21 +151,4 @@ var restaurants = [
         "rating_text": "Good"
       }
 ]
-
-function Router(menu){
-
-restaurantsRouter.route('/')
-    .get(function(req,res){
-        res.render('restaurant',{title:'Restaurant Page',menu:menu,restaurants:restaurants})
-    })
-
-restaurantsRouter.route('/details')
-    .get(function(req,res){
-      res.render('restaurantsDetails')
-    })
-
-    return restaurantsRouter
-}
-
-
-module.exports = Router;
+)
