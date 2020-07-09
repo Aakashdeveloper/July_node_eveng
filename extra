@@ -238,3 +238,30 @@ db.second.find({city:'Delhi'})
 db.second.find({name:'Zoe'})
 db.restaurant.find().pretty()
 
+https://github.com/dmajkic/redis/downloads
+> redis-server
+> redis-cli  >6379
+
+> set key Value
+> get key
+> KEYS *
+
+npm i axios express redis
+
+
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+//Es6
+var add = (a,b) => { return a+b}
+
+
+var a = 10
+var b = "my age is "+a
+//es5
+"my age is 10"
+//es6
+`my age is ${a}`

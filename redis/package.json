@@ -1,0 +1,21 @@
+{
+  "name": "redisapp",
+  "version": "1.0.0",
+  "description": "this is about caching",
+  "main": "index.js",
+  "scripts": {
+   "start":"node api.js",
+   "dev":"nodemon api.js"
+  },
+  "keywords": [
+    "node",
+    "redis"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
+  }
+}
