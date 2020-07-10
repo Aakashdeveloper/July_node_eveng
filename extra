@@ -8,16 +8,16 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
-////////////////////////////////
 Redis
 Email With Node(Sendgrid)
+Github
+////////////////////////////////
 MongoDb Basic
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Oauth(with github)
 OO_NodeJs
 Node-Es6(.babel)
-Github
 Login/Logout(JWT)
 NodeJs with postgres
 Testing
@@ -266,3 +266,19 @@ var b = "my age is "+a
 "my age is 10"
 //es6
 `my age is ${a}`
+
+
+///github
+>>>>>>FirstTime<<<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testjuly.git
+git push -u origin master
+
+>>>>>>Next Time<<<<<<
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b myfeature

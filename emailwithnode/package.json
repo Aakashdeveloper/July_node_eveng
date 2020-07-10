@@ -1,0 +1,19 @@
+{
+  "name": "emailwithnode",
+  "version": "1.0.0",
+  "description": "this is email connnection",
+  "main": "index.js",
+  "scripts": {
+   "start":"node app.js",
+   "dev":"nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "email"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.1"
+  }
+}
