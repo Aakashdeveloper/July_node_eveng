@@ -282,3 +282,6 @@ git commit -m "first commit"
 git push
 
 git checkout -b myfeature
+git add .
+git commit -m "first commit"
+git push -u origin myfeature
