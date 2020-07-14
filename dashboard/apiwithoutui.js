@@ -19,7 +19,17 @@ app.get('/',(req,res) => {
 
 //Get the user
 app.get('/user',(req,res) => {
-    db.collection(col_name).find().toArray((err,result) => {
+    var query ={}
+    if(req.query.id){
+        query={_id:parseInt(req.query.id),isActive:true}
+    }
+    else if(req.query.city){
+        query={city:req.query.city,isActive:true}
+    }else{
+        query={isActive:true}
+    }
+   
+    db.collection(col_name).find(query).toArray((err,result) => {
         if(err) throw err
         res.send(result)
     });
@@ -33,6 +43,38 @@ app.post('/addUser',(req,res) => {
             throw err
         }else{
             res.send('Data Added')
+        }
+    })
+});
+
+//updateUser
+app.put('/updateUser',(req,res) => {
+    db.collection(col_name).update(
+        {_id:req.body.id},
+        {
+            $set:{
+                name:req.body.name,
+                city:req.body.city,
+                phone:req.body.phone,
+                isActive:true
+            }
+        },(err,result) => {
+            if(err){
+                throw err
+            }else{
+                res.send('Data Updated')
+            }
+        }
+    )
+});
+
+//Delete User
+app.delete('/deleteUser',(req,res) => {
+    db.collection(col_name).remove({_id:req.body.id},(err,result) => {
+        if(err){
+            throw err
+        }else{
+            res.send('Data Deleted')
         }
     })
 })

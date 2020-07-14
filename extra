@@ -11,10 +11,10 @@ Third Party Api (Weather Api)
 Redis
 Email With Node(Sendgrid)
 Github
-////////////////////////////////
 MongoDb Basic
 Api with NodeJS(Rest)
 DashBoard(Crud)
+////////////////////////////////
 Oauth(with github)
 OO_NodeJs
 Node-Es6(.babel)
@@ -239,6 +239,10 @@ db.second.find({city:'Delhi'})
 db.second.find({name:'Zoe'})
 db.restaurant.find().pretty()
 
+db.test.update({_id:1},{$set:{"class":"FullStack"}})
+db.test.remove({_id:2})
+db.test.remove({})
+
 https://github.com/dmajkic/redis/downloads
 > redis-server
 > redis-cli  >6379
@@ -285,3 +289,8 @@ git checkout -b myfeature
 git add .
 git commit -m "first commit"
 git push -u origin myfeature
+
+c> Create(post)
+r> read(get)
+u> update(put)
+d> delete(delete)
