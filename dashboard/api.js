@@ -12,13 +12,32 @@ let col_name="nodeat8";
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(express.static(__dirname+'/public'));
+app.set('views','./src/views');
+app.set('view engine','ejs');
 
-app.get('/',(req,res) => {
+app.get('/health',(req,res) => {
     res.status(200).send("Hello Ok")
 });
 
+//Get all user
+app.get('/',(req,res) => {
+    db.collection(col_name).find({isActive:true}).toArray((err,result) => {
+        if(err) throw err
+        res.render('index',{data:result})
+    });
+});
+
+
+//Get all user
+app.get('/new',(req,res) => {
+    var random =Math.floor(Math.random()*10000)
+    res.render('admin',{id:random})
+});
+
+
 //Get the user
-app.get('/user',(req,res) => {
+app.get('/users',(req,res) => {
     var query ={}
     if(req.query.id){
         query={_id:parseInt(req.query.id),isActive:true}
@@ -38,19 +57,29 @@ app.get('/user',(req,res) => {
 //Add the user
 app.post('/addUser',(req,res) => {
     console.log(req.body);
-    db.collection(col_name).insert(req.body,(err,result) => {
+    const data = {
+        "_id":parseInt(req.body._id),
+        "name":req.body.name,
+        "city":req.body.city,
+        "phone":req.body.phone,
+        "isActive":true
+    }
+    db.collection(col_name).insert(data,(err,result) => {
         if(err){
             throw err
         }else{
-            res.send('Data Added')
+            res.redirect('/')
         }
     })
 });
 
 //updateUser
 app.put('/updateUser',(req,res) => {
+    console.log(req.query)
+    console.log(req.body)
     db.collection(col_name).update(
-        {_id:req.body.id},
+        
+        {_id:parseInt(req.body._id)},
         {
             $set:{
                 name:req.body.name,
@@ -70,15 +99,14 @@ app.put('/updateUser',(req,res) => {
 
 //Delete User
 app.delete('/deleteUser',(req,res) => {
-    db.collection(col_name).remove({_id:req.body.id},(err,result) => {
+    db.collection(col_name).remove({_id:parseInt(req.body.id)},(err,result) => {
         if(err){
             throw err
         }else{
             res.send('Data Deleted')
         }
     })
-});
-
+})
 
 
 MongoClient.connect(mongourl,(err,client) => {
