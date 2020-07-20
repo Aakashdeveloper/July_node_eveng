@@ -294,3 +294,6 @@ c> Create(post)
 r> read(get)
 u> update(put)
 d> delete(delete)
+
+
+npm i bcryptjs body-parser cors express jsonwebtoken mongoose
