@@ -15,10 +15,10 @@ MongoDb Basic
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Oauth(with github)
-////////////////////////////////
 Login/Logout(JWT)
-OO_NodeJs
 Node-Es6(.babel)
+////////////////////////////////
+OO_NodeJs
 NodeJs with postgres
 Testing
 GraphQl API
@@ -297,3 +297,6 @@ d> delete(delete)
 
 
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+
+
+npm i @babel/core @babel/preset-env @babel/register
