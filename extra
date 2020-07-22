@@ -17,20 +17,19 @@ DashBoard(Crud)
 Oauth(with github)
 Login/Logout(JWT)
 Node-Es6(.babel)
-////////////////////////////////
 OO_NodeJs
-NodeJs with postgres
 Testing
+////////////////////////////////
+NodeJs with postgres
 GraphQl API
+Pm2
+Heroku
 ChatApp
 ////////////////////
 Production 
 ////////////////
-Pm2
 Docker
 Nginx
-Heroku
-
 
 Single Threaded Async Non Blocking I/O
 
@@ -300,3 +299,6 @@ npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 
 
 npm i @babel/core @babel/preset-env @babel/register
+
+
+npm i @babel/core @babel/preset-env @babel/register body-parser express mongodb
