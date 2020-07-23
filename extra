@@ -19,11 +19,11 @@ Login/Logout(JWT)
 Node-Es6(.babel)
 OO_NodeJs
 Testing
-////////////////////////////////
 NodeJs with postgres
-GraphQl API
+////////////////////////////////
 Pm2
 Heroku
+GraphQl API
 ChatApp
 ////////////////////
 Production 
@@ -302,3 +302,7 @@ npm i @babel/core @babel/preset-env @babel/register
 
 
 npm i @babel/core @babel/preset-env @babel/register body-parser express mongodb
+
+
+
+npm i -g pm2
