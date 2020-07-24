@@ -1,0 +1,8 @@
+{
+      movie(id:4){
+    		name,
+    		type
+    
+  	}
+
+}
