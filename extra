@@ -20,14 +20,11 @@ Node-Es6(.babel)
 OO_NodeJs
 Testing
 NodeJs with postgres
-////////////////////////////////
 Pm2
 Heroku
 GraphQl API
 ChatApp
-////////////////////
 Production 
-////////////////
 Docker
 Nginx
 
@@ -306,3 +303,10 @@ npm i @babel/core @babel/preset-env @babel/register body-parser express mongodb
 
 
 npm i -g pm2
+
+
+npm i axios cors express express-graphql graphql lodash
+
+
+npm i -g json-server
+json-server --watch db.json --port 8900
