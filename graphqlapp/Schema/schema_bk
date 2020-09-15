@@ -42,6 +42,7 @@ const movies = [
         "rate": 2,
         "imageUrl": "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/04/01/Pictures/_46a0b2c0-3590-11e8-8c5f-3c6cc031651e.jpg"
     }
+    
 ]
 
 const MovieType = new GraphQLObjectType({
